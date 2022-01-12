@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Super Keyword</title>
+    </head>
+    <body>
+        <script>
+            class Parent{
+                constructor(){
+                    this.data="Parent"
+                }
+                displaydata(){
+                    console.log("This is from Parent")
+                }
+            }
+
+            class Child extends Parent{
+                constructor(){
+                    super();
+                    this.name="Child";
+                }
+                displaydata(){
+                    console.log("This is from Child");
+                    super.displaydata();
+                    console.log(this.name);
+                    console.log(super.data);
+                }
+            }
+
+            var childobject = new Child();
+            console.log(childobject);
+            childobject.displaydata();
+        </script>
+    </body>
+</html>

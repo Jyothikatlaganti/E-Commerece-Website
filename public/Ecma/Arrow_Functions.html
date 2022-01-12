@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Arrow Functions</title>
+    </head>
+    <body>
+        <script>
+            class functions{
+                constructor(){
+                    this.count=10;
+                }
+                    displayfunction(){
+                        setTimeout(()=>{
+                            console.log("Count inside Arrow  function is "+this.count) 
+                        },5000)
+                        setTimeout(function (){
+                            console.log("Count inside Normal function is "+this.count) 
+                        },3000)
+                    }
+            }
+
+            var object = new functions();
+            object.displayfunction();
+            console.log("Count outside function "+object.count);
+        </script>
+    </body>
+</html>

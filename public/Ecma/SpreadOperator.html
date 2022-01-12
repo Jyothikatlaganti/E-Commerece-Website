@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spread Operator</title>
+    </head>
+    <body>
+        <script>
+            var data1=[10,20,30];
+            var data2=[40,50,60];
+            console.log("data1 before using spread operator "+data1)
+            data1=[10,20,30,...data2];
+            console.log("data1 after using spread operator "+data1)
+
+
+            var msg = "Hello Everyone Welocme to Training";
+            console.log("msg befor using spreadoperator "+msg);
+            console.log("msg after using spreadoperator ");
+            var result =[...msg];
+            console.log(result);
+        </script>
+    </body>
+</html>

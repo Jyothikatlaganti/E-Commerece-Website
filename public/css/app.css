@@ -1,0 +1,93 @@
+header,
+footer,
+main{
+    border: 1px solid;
+    padding: 10px;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+}
+main{
+    top: 49px;
+    bottom: 50px;
+    overflow: auto;
+    background-image: linear-gradient( #871919, #ffc0c0);
+}
+footer{
+    bottom: 9px;
+    text-align: center;
+}
+.card{
+    width: 500px;
+    height: fit-content;
+    margin: 110px auto;
+    padding: 20px;
+    background-image: linear-gradient(rgb(0, 217, 255),rgb(87, 187, 56));
+    box-shadow: 0 0 50px black;
+}
+.card-body li{
+    margin-top: 20px;
+    list-style: none;
+}
+.btn{
+    position: relative;
+    left: 182px;
+    top: 18px;
+}
+.signup{
+    margin-left: 182px;
+    margin-top: 20px;
+}
+.forgetpass,#dltact{
+    margin-left: 150px;
+}
+#dltact{
+    color: #3310f2;
+    text-decoration: underline;
+    cursor: pointer;
+}
+input{
+    position: absolute;
+    left: 181px;
+}
+#errorblock,#smsg,#dmsg{
+    margin: 20px auto;
+    text-align: center;
+    padding: 10px;
+    width: fit-content;
+    color: red;
+    font-size: larger;
+    display: none;
+}
+.Card{
+    border: 1px solid;
+    float: left;
+    margin-left: 65px;
+    margin-top: 30px;
+}
+img{
+    height: 296px;
+}
+.apply{
+    background-color:var(--bs-gray-300);
+}
+#smsg,#dmsg{
+    color: #3310f2;
+    border: 1px solid #fff;
+    background-color: whitesmoke;
+}
+.logoutlink{
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: white;
+    width: fit-content;
+    float: right;
+}
+.error{
+    color: red;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    display: none;
+}

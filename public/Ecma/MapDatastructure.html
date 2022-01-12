@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Demonstrating Map DataStructure</title>
+    </head>
+    <body>
+        <script>
+            var data = new Map(); // same as arrays but doenst accept duplicate values
+            data.set("name","Jyothi");
+            console.log(data);
+            console.log(data.get("name"));
+            console.log(data.size);
+            for(let [key,value] of data){
+                console.log(key,value);
+            }
+        </script>
+    </body>
+</html>

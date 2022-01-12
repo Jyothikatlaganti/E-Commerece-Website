@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Upload adata</title>
+        <script src="../javascripts/lib/JQUERY_LIB.js"></script>
+        <script src="app.js"></script>
+        <style>
+            ul{
+                border: 1px solid;
+                margin: 50px auto;
+                padding: 20px;
+                width: 300px;
+            }
+            li{
+                border: 2px solid #ccc;
+                margin: 20px auto;
+                padding: 10px;
+                width: 250px;
+                list-style: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" enctype="multipart/form-data">
+        <ul>
+            <li>
+               Product Title: <input type="text" id="ptitle">
+            </li>
+            <li>
+                <input type="file" id="image" name='prodImage'>
+            </li>
+            <li>
+                <input type="button" value="Submit" onclick="submitingdata()">
+            </li>
+        </ul>
+    </form>
+    </body>
+</html>

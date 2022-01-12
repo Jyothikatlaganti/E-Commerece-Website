@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Keywords </title>
+    </head>
+    <body>
+        <script>
+            var a =20; // Global Scope
+            const c = 20; // Const Keyword to make variables constant
+            function modulescope(){ // Module Scope
+                var b= 20;
+            }
+            for(var i=0;i<5;i++){ // Block scope
+                let name1= "Teena";
+            }
+            //c =10;
+            console.log("Global Scope " +a);
+           // console.log("ModuleScope "+b);
+            //console.log("Block Scope "+name1);
+            console.log("const word "+c);
+        </script>
+    </body>
+</html>

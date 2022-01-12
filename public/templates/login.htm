@@ -1,0 +1,25 @@
+<div class="card">
+    <div class="card-body">
+       <li>
+           <label for="">User Name:</label>
+           <input type="text" id="uname">
+       </li>
+       <li>
+           <label for="">Password:</label>
+           <input type="password" id="upass">
+       </li>
+           <button class="btn btn-primary" onclick="loginuser();">Login</button>
+       <li>
+           <button class="signup"  onclick="loadpage('signup')">Sign up</button>
+       </li>
+       <li>
+           <button class="forgetpass" onclick="loadpage('frgtpwd')">Forget Password?</button>
+       </li>
+       <li>
+           <span id="dltact" onclick="loadpage('deleteact')">Delete Account?</span>
+       </li>
+       <div id="errorblock">
+               Invalid Credentials,Please enter Valid Credentials
+       </div>
+   </div>
+</div>
